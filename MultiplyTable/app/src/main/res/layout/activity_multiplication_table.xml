@@ -8,7 +8,7 @@
     tools:context=".MultiplicationTable">
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/multiTableView"
         android:layout_width="408dp"
         android:layout_height="728dp"
         android:text="TextView"
