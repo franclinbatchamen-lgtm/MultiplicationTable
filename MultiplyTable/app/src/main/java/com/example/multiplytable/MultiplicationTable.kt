@@ -18,11 +18,19 @@ class MultiplicationTable : AppCompatActivity() {
         val tableString: String? = bundle?.getString("tableNumber")
 
         // convert the table number to an integer
-        val tableNumber = tableString?.toInt()
+        val tableNumber = tableString!!.toInt()
 
         // display the heading so we can see the value in action
         val multiplicationTable = findViewById<TextView>(R.id.multiTableView)
-        multiplicationTable.text = "$tableNumber x table"
+
+        //start with the heading and add two new lines
+        var tableDisplay: String = "$tableNumber x table\n\n"
+
+
+        // set the string onto display
+        multiplicationTable.text = tableDisplay
+
+
 
 
 
