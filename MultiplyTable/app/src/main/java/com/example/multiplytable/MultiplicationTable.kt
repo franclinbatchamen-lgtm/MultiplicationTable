@@ -26,9 +26,18 @@ class MultiplicationTable : AppCompatActivity() {
         //start with the heading and add two new lines
         var tableDisplay: String = "$tableNumber x table\n\n"
 
+        //declare the control variable
+        var counter = 1
+        while (counter <= 10) { // check the control variable
+            val answer = tableNumber * counter
+            tableDisplay += "$tableNumber x $counter = $answer\n"
+            counter++         // updates the control variable
+        }
 
         // set the string onto display
         multiplicationTable.text = tableDisplay
+
+
 
 
 
