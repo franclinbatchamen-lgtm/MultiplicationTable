@@ -15,8 +15,6 @@ class MainActivity : AppCompatActivity() {
         enableEdgeToEdge()
         setContentView(R.layout.activity_main)
 
-
-
         val MultiplyButton = findViewById<Button>(R.id.MultiplyButton)
         val editTextNumber = findViewById<EditText>(R.id.editTextNumber)
         MultiplyButton.setOnClickListener {
@@ -30,12 +28,6 @@ class MainActivity : AppCompatActivity() {
             // start the activity
             startActivity(intent)
         }
-
-
-
-
-
-
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

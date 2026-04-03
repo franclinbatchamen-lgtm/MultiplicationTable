@@ -1,6 +1,7 @@
 package com.example.multiplytable
 
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
@@ -37,21 +38,11 @@ class MultiplicationTable : AppCompatActivity() {
         // set the string onto display
         multiplicationTable.text = tableDisplay
 
+        val backButton = findViewById<Button>(R.id.backButton)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        backButton.setOnClickListener {
+            finish() // closes this activity and returns to MainActivity
+        }
 
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main)) { v, insets ->
