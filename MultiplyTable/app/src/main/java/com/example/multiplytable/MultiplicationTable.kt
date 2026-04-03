@@ -17,7 +17,7 @@ class MultiplicationTable : AppCompatActivity() {
         val bundle: Bundle? = intent.extras
         val tableString: String? = bundle?.getString("tableNumber")
 
-        // convert the table number to an integer
+        // convert the table number to an integer that is non-nullable
         val tableNumber = tableString!!.toInt()
 
         // display the heading so we can see the value in action
