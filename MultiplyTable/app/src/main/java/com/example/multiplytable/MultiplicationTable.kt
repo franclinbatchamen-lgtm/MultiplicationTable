@@ -29,7 +29,7 @@ class MultiplicationTable : AppCompatActivity() {
 
         //declare the control variable
         var counter = 1
-        while (counter <= 10) { // check the control variable
+        while (counter <= 20) { // check the control variable
             val answer = tableNumber * counter
             tableDisplay += "$tableNumber x $counter = $answer\n"
             counter++         // updates the control variable
